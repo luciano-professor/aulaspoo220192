@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="aula3_2.Aula3_2Controller">
+   <children>
+      <Label layoutX="96.0" layoutY="14.0" text="Qual Período Você Gostaria de Estar?">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio1" layoutX="96.0" layoutY="76.0" mnemonicParsing="false" text="1º">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="periodo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio3" layoutX="96.0" layoutY="141.0" mnemonicParsing="false" text="3°" toggleGroup="$periodo">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio5" layoutX="95.0" layoutY="205.0" mnemonicParsing="false" text="5º" toggleGroup="$periodo">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio7" layoutX="96.0" layoutY="274.0" mnemonicParsing="false" text="7°" toggleGroup="$periodo">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="296.0" layoutY="508.0" mnemonicParsing="false" onAction="#pegarDados" text="Pegar Dados">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelDados" layoutX="99.0" layoutY="343.0" text="Dados:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
